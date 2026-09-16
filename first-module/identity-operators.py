@@ -20,5 +20,9 @@ print('Operador IS:')
 print('Saldo é limite?', balance is limit) # True
 
 balance, limit = 1000, 500
+print('\nVariáveis em segundo estado:')
+print('Saldo:', balance)
+print('Limite:', limit, '\n')
+
 print('Operador IS:')
 print('Saldo é limite?', balance is limit) # False

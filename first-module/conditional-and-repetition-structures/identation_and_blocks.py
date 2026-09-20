@@ -32,5 +32,3 @@ print('Teste com valor menor do que o saldo:')
 withdraw(100)
 print('\nTeste com valor maior do que o saldo:')
 withdraw(1000)
-
-

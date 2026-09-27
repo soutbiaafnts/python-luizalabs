@@ -96,3 +96,33 @@ languages.append('c')
 print(languages)
 languages.reverse()
 print(languages)
+languages.reverse()
+
+# [].sort -> ordena a lista
+print()
+print('> [].sort <'.center(50, '-'))
+
+print(f'Lista original: {languages}')
+languages.sort()
+print(f'Ordenação padrão (alfabética): {languages}') 
+languages.sort(reverse = True)
+print(f'Reverse True (alfabética ao contrário): {languages}') 
+languages.sort(key = lambda x: len(x))
+print(f'Ordenação por tamanho (crescente): {languages}') 
+languages.sort(key = lambda x: len(x), reverse = True)
+print(f'Ordenação por tamanho (decrescente): {languages}') 
+
+# len -> tamanho da lista
+print()
+print('> len <'.center(50, '-'))
+
+print(f'Lista: {languages}')
+print(f'Tamanho da lista: {len(languages)}')
+
+# sorted -> também serve para ordenar iteráveis
+print()
+print('> sorted <'.center(50, '-'))
+
+print(f'Lista: {languages}')
+print(f'Ordenação por tamanho (crescente): {sorted(languages, key = lambda x: len(x))}')
+print(f'Ordenação por tamanho (decrescente): {sorted(languages, key = lambda x: len(x), reverse = True)}')
